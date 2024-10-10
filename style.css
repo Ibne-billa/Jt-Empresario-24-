@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    overflow: hidden;
+    color: black;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(WhatsApp\ Image\ 2024-10-08\ at\ 16.37.00_6a6f442f.png);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Reduce brightness*/
+}
+
+/* Container for the two columns */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 80%; /* Adjust height for boxes */
+    border: 2px solid transparent;
+    text-align: center;
+    animation: fadeIn 2.5s;
+    border-radius: 10%;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  
+.box img {
+    max-width: 90%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.para{
+    text-decoration: none;
+}
+.box p{
+    color: #dbc2e9;
+    font-size: 38px;
+    font-family: "Barlow", sans-serif;
+    text-decoration: none;
+}
+.box p:hover{
+    color: black;
+}
+
+/* Hover effect*/
+.box:hover {
+    border: 2px solid #dbc2e9;
+    background-color: #dbc2e9;
+    color: black;
+}
+
+/* Footer image at the bottom */
+.footer-image {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 450px; /* Footer image height */
+    width: 75%; /* Footer image width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.footer-image img {
+    position: relative;
+    width: 75%;
+    max-height: 1000px;
+    bottom: 1px;
+}
+
+/* Responsive design*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+        height: 40vh;
+    }
+    
+    .footer-image {
+        position: relative;
+        height: 300px;
+        width: 90%;
+        bottom: 100px;
+    }
+    
+    .footer-image img {
+        max-height: 100%;
+        margin-top: 0;
+    }
+}
+.register-btn{
+    font-size: 30px;
+    background-color: #dbc2e9;
+    border: none;
+    
+}
