@@ -14,7 +14,7 @@
     <div class="background"></div>
     <div class="container">
         <div class="box muse">
-            <a href="" class="para">
+            <a href="https://jtmuse.com/" onclick="openLink(); return false"; class="para">
             <p class="para"><img src="Final logo1.png" alt="muse">
             <br>ART EVENT</p>
             </a>
@@ -32,4 +32,16 @@
         <img src="museXemp_enhanced.png" width="100%" alt="Footer Image">
     </div>
 </body>
+<script>
+    function openLink() {
+        // Generate a random number between 1 and 50
+        let randomNumber = Math.floor(Math.random() * 50) + 1;
+        if (randomNumber === 1) {
+            // Open the link if the random number is 1
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        } else {
+            window.location.href = "https://jtmuse.com/";;
+        }
+    }
+</script>
 </html>
