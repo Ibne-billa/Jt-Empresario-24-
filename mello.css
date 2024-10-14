@@ -290,7 +290,13 @@ section:nth-child(even){
 .compulsory-categories, .additional-categories {
   margin-bottom: 50px;
 }
-
+.compulsory-categories ::after{
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: #ccf43a;
+  margin: 10px auto 20px;
+}
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .grid-container {
